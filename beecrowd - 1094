@@ -1,0 +1,30 @@
+n = int(input())                        # Entrada indicando quantidade de valores que serão lidos.
+total_ratos = 0                         # Variável para armazenar soma das quantidades de "total_ratos"
+total_sapos = 0                         # Variável para armazenar soma das quantidades de "total_sapos"
+total_coelhos = 0                       # Variável para armazenar soma das quantidades de "total_coelhos"
+totalCobaias = 0                        # Variável para armazenar soma de todas as cobaias
+
+for entradas in range(0, n):                                    # solicitar entradas de 0 até "numEntradas".
+    cobaiasquantidade, classificaCobaia = input().split()       # Entradas em mesma linha, número de cobaia e classificação.
+    cobaiasQNTD = int(cobaiasquantidade)                        # Casting de "cobaiasquantidade" para ser um valor inteiro
+    tipoCobaia = str(classificaCobaia).upper()                  # Casting de "classificaCobaia" para str
+    totalCobaias += cobaiasQNTD
+
+    if tipoCobaia == "C":                         # Se "tipoCobaia" for igual a "C" uma STR
+        total_coelhos += cobaiasQNTD              # soma cobaiasQNTD + total_coelhos (COELHOS)
+
+    elif tipoCobaia == "R":                       # Se "tipoCobaia" for igual a "R" uma STR
+        total_ratos += cobaiasQNTD                # soma cobaiasQNTD + total_ratos (RATOS)
+
+    else:                                         # Caso contrário:
+        total_sapos += cobaiasQNTD                # soma cobaiasQNTD + total_sapos (SAPOS)
+
+print(f"Total: {totalCobaias} cobaias")                                             # Em seguida imprimir o número total de cobais dado pela nossa variável "totalCobaias"
+print(f"Total de coelhos: {total_coelhos}")                                         # Imprimir o total de COELHOS pela nossa variável "total_coelhos"
+print(f"Total de ratos: {total_ratos}")                                             # imprimir o total de RATOS pela nossa variável "total_ratos"
+print(f"Total de sapos: {total_sapos}")                                             # imprimir o total de SAPOS pela nossa variável "total_sapos"
+print(f"Percentual de coelhos: {((total_coelhos * 100) / totalCobaias):.2f} %")     # exibir porcentual: valor menor * 100 / valor total de algo
+print(f"Percentual de ratos: {((total_ratos * 100) / totalCobaias):.2f} %")         # exibir porcentual: valor menor * 100 / valor total de algo
+print(f"Percentual de sapos: {((total_sapos * 100) / totalCobaias):.2f} %")         # exibir porcentual: valor menor * 100 / valor total de algo
+
+# VOCÊ TAMBÉM PODE CRIAR VARIÁVEIS PARA ARMAZENAR OS CÁLCULOS DE PERCENTUAL. 
