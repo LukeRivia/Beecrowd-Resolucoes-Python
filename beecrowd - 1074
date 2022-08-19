@@ -1,0 +1,22 @@
+#  Primeira entrada em N
+N = int(input())                # N estabelece a quantidade de entradas seguintes.
+for casoTeste in range(N):      # execução da estrutura em "N" repetições.
+    X = int(input())            # Para cada execução uma entrada é solicitada
+
+    # Para cada entrada é verificado se o número é:
+    # par positivo ou negativo ou impar positivo e negativo.
+    # Caso não apresente nenhum dessas condições o valor é null "0"
+    if X % 2 == 0 and X > 0:
+        print("EVEN POSITIVE")
+
+    elif X % 2 == 0 and X < 0:
+        print("EVEN NEGATIVE")
+
+    elif X < 0 and X % 2 != 0:
+        print("ODD NEGATIVE")
+
+    elif X % 2 != 0 and X > 0:
+        print("ODD POSITIVE")
+
+    else:
+        print("NULL")
