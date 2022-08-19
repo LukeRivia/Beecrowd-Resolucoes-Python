@@ -1,0 +1,3 @@
+N = int(input())                             # Entrada do valor como "N"
+for numero in range(1, 11):                  # Para cada número de 1 até 10
+    print(f"{numero} x {N} = {numero*N}")    # Imprima a multiplicação de numero * "N"
