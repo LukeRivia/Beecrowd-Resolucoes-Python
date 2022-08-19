@@ -1,0 +1,8 @@
+entradaCasosTestes = int(input())             # Quantidade de valores que serão lidos em seguida.
+
+for entrada in range(entradaCasosTestes):     # leia valores na quantidade  "entradaCasosTestes"
+    num1, num2 = map(int, input().split())    # valores inteiros "na mesma linha"
+
+    # Se o num2 que sempre será o divisor (neste caso) for igual a 0, imprima "divisão impossível"
+    # Caso contrário, imprima o resultado da divisão cum 1 casa decimal.
+    print("divisao impossivel") if num2 == 0 else print(f"{num1 / num2:.1f}")
