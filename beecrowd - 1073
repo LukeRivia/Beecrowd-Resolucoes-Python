@@ -1,0 +1,6 @@
+N = int(input())  # Entrada do valor como "N"
+
+if 5 < N < 2000:    # Se o valor for maior que 5 e menor que 2000
+    if N % 2 == 0:  # E se for par
+        for numero in range(2, N+1, 2):             # Para cada número de 2 até "N"
+            print(f"{numero}^{2} = {numero ** 2}")  # Imprima o quadrado de cada um.
