@@ -1,0 +1,7 @@
+N = int(input())                # N para indicar quantidade de casos teste
+for numero in range(N):         # para cada numero será efetuada uma ação "N" vezes
+    media = input().split()     # Entrada em split
+    # Calculo de média ponderada, nessa situação resolvi realizar o casting no momento do cálculo.
+    calculo = ((float(media[0]) * 2) + ((float(media[1])) * 3) + (float(media[2]) * 5)) / 10
+    # Imprime o resultado de cada caso teste após confirmar entrada.
+    print(f"{calculo:.1f}")
