@@ -7,4 +7,4 @@ No entanto, algumas melhoras não serão possíveis devido o formato final que a
 exige, para que quando a questão seja submetida, ela seja 100% aceita.
 #
 #### TECNOLOGIAS USADAS NESTE PROJETO:
-![Blog](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
+[![Blog](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://www.python.org)
